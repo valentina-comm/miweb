@@ -14,7 +14,7 @@ header {
      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
     color: black;
     padding: 3rem 2rem;
-    height: 400px;
+    height: 300px;
 }
 /*rem son medidas relativas dependiendo del tamaño
 de la fuente de nuestra etiqueta html*/
@@ -33,6 +33,7 @@ section article {
     background-color: #fff;
     margin: 1rem 0;
 }
+
 
 
 
