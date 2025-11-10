@@ -27,7 +27,7 @@ header h1 { /*4x16*/
 .container {
     width: 400px;
     margin: 0;
-    margin-left: 40px
+    margin-left: 5px
 }
 
 section article {
@@ -36,6 +36,7 @@ section article {
 }
 
     
+
 
 
 
