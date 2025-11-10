@@ -1,45 +1,65 @@
+/* --- Estilos Generales y Resets --- */
 html {
     font-family: "Montserrat", sans-serif;
 }
 body {
     margin: 0;
     background-color: #efefef;
+    /* Incluir esto es una buena práctica para responsividad */
+    box-sizing: border-box; 
+}
+/* Aseguramos que box-sizing se aplique a todos los elementos */
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
+/* --- Estilos del Encabezado (Header) --- */
 header {
     background-image: url("img/Leon.png");
     background-size: cover;
     background-position: center 50%;
     background-repeat: no-repeat;
-     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-    color: black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Oscurecido para mejor contraste */
+    color: white; /* Cambiado a blanco para mejor contraste con la sombra */
+    /* Usamos 'vh' para una altura adaptable a la ventana */
+    height: 60vh; 
     padding: 3rem 2rem;
-    height: 400px;
+    
+    /* Centrar el título verticalmente */
+    display: flex; 
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column;
 }
-/*rem son medidas relativas dependiendo del tamaño
-de la fuente de nuestra etiqueta html*/
 
-header h1 { /*4x16*/
+header h1 {
     font-size: 4rem;
     text-align: center;
+    /* Ajuste de margin para centrar mejor si hay otros elementos */
+    margin: 0; 
 }
 
+/* --- Estilos del Contenedor Principal (Grid) --- */
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* ⭐ CLAVE: Permite que los elementos salten a la línea de abajo */
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    gap: 20px;
+    gap: 20px; /* Espacio entre los posts */
 }
 
 .post {
-
-    width: 49%;
+    /* ⭐ CLAVE: Usamos flex-basis y flex-grow para responsividad.
+       flex-basis: 49% -> Ocupa casi la mitad del espacio
+       flex-grow: 1 -> Le permite crecer si hay espacio, o contraerse si no lo hay. */
+    flex: 1 1 49%; 
+    min-width: 300px; /* Asegura que cada columna tenga un ancho mínimo antes de apilarse */
+    
     background-color: #fff;
     padding: 15px;
-    box-sizing: border-box;
     border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Añadir sombra para efecto de elevación */
 }
 
 .post img {
@@ -49,23 +69,50 @@ header h1 { /*4x16*/
     margin-bottom: 10px;
 }
 
+.post p {
+    margin-bottom: 15px;
+}
+
+/* --- Media Query: El Secreto para el Diseño "Intacto" --- */
+
+/* Cuando la pantalla se achica a 768px o menos (típico de tablets/móviles grandes) */
+@media (max-width: 768px) {
     
+    header {
+        height: 40vh; /* Reduce la altura del header para ahorrar espacio */
+    }
 
+    header h1 {
+        font-size: 3rem; /* Reduce el tamaño del título */
+    }
 
+    .container {
+        /* Eliminamos el width fijo en móviles para que ocupe el 100% (con padding) */
+        width: 100%; 
+        padding: 0 10px; /* Añade un poco de espacio en los bordes */
+        gap: 15px;
+    }
+    
+    .post {
+        /* ⭐ CLAVE: Hace que cada post ocupe el 100% del ancho del contenedor.
+           Al reducir la pantalla, se apilan verticalmente. */
+        flex: 1 1 100%;
+    }
+}
 
+/* Ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* --- Estilos del Footer --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #666;
+}
 
