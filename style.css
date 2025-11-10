@@ -24,9 +24,6 @@ header h1 { /*4x16*/
     text-align: center;
 }
 
-@media (max-width: 768px){
-    
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -51,9 +48,9 @@ header h1 { /*4x16*/
     display: block;
     margin-bottom: 10px;
 }
-}
 
     
+
 
 
 
