@@ -7,8 +7,12 @@ body {
 }
 
 header {
-    background-color: #364552;
-    color: white;
+    background-image: url("img/Leon.png");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    color: black;
     padding: 3rem 2rem
 }
 /*rem son medidas relativas dependiendo del tamaño
