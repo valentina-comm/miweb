@@ -25,31 +25,34 @@ header h1 { /*4x16*/
 }
 
 .container {
-
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     width: 90px;
     max-width: 1200px;
-    margin: 20 auto px;
-    gap: 20px;
+    margin: 20px auto;
+    gap: 10px;
 }
 
 .post {
 
-    width: 31%
+    width: 49%
     background-color: #fff;
     padding: 15px;
     box-sizing: border-box;
     border: 1px solid #ccc;
+    min-height: 400px;
 }
 
 .post img {
     width: 100%
     height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
     
 
     
+
 
 
 
