@@ -35,16 +35,15 @@ header h1 { /*4x16*/
 
 .post {
 
-    width: 49%
+    width: 49%;
     background-color: #fff;
     padding: 15px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    min-height: 400px;
 }
 
 .post img {
-    width: 100%
+    width: 100%;
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -52,6 +51,7 @@ header h1 { /*4x16*/
     
 
     
+
 
 
 
