@@ -25,17 +25,32 @@ header h1 { /*4x16*/
 }
 
 .container {
-    width: 400px;
-    margin: 0;
-    margin-left: 40px
+
+display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
 }
 
-section article {
+.post {
+
+    width: 48%
     background-color: #fff;
-    margin: 1rem 0;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
 }
+
+.post img {
+    width: 100%
+    height: auto;
+}
+    
 
     
+
 
 
 
