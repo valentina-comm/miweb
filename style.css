@@ -39,6 +39,19 @@ header h1 {
     margin: 0; 
 }
 
+h2 {
+  text-align: center;              /* Centra el texto */
+  color: #2c3e50;                  /* Color del texto (puedes cambiarlo) */
+  border: 3px solid #3498db;       /* Borde azul alrededor del título */
+  display: inline-block;           /* Hace que el borde se ajuste al texto */
+  padding: 10px 20px;              /* Espacio interno */
+  border-radius: 10px;             /* Bordes redondeados */
+  background-color: #eaf6ff;       /* Fondo suave */
+  font-family: 'Poppins', sans-serif; /* Fuente moderna */
+  font-size: 1.5em;                /* Tamaño del texto */
+  margin: 20px auto;               /* Espaciado arriba y abajo */
+}
+
 /* --- Estilos del Contenedor Principal (Grid) --- */
 .container {
     display: flex;
@@ -115,4 +128,5 @@ footer {
     border-top: 1px solid #ccc;
     color: #666;
 }
+
 
