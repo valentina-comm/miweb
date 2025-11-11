@@ -39,7 +39,7 @@ header h1 {
     margin: 0; 
 }
 
-h2 {
+h3 {
   text-align: center;              /* Centra el texto */
   color: #2c3e50;                  /* Color del texto (puedes cambiarlo) */
   border: 3px solid #3498db;       /* Borde azul alrededor del título */
@@ -128,5 +128,6 @@ footer {
     border-top: 1px solid #ccc;
     color: #666;
 }
+
 
 
